@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PyScript Loop Example</title>
+
+    <!-- PyScript external links -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+
+    <style>
+        .box {
+            border: 2px solid red;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Demonstration of Python coding in HTML</h1>
+
+    <!-- Box 1 for HELLO WORLD -->
+    <div id="hello-box" class="box">
+    <!-- PyScript for HELLO WORLD -->
+    <py-script>
+        from pyscript import display
+        display("HELLO WORLD!", target="hello-box")
+    </py-script>
+    </div>
+
+    <!-- Box 2 for numbers -->
+    <div id="numbers-box" class="box">
+    <py-script>
+        for i in range(1, 6, 2):
+            display(i, target="numbers-box")
+    </py-script>
+    </div>   
+
+</body>
+</html>
+
